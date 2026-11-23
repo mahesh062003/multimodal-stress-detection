@@ -1,0 +1,155 @@
+/* Smartwatch Data Analysis Container */
+.smartwatch-container {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+/* Header */
+.smartwatch-container h2 {
+  font-size: 2rem;
+  color: #64ffda; /* Neon Green */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/* Custom Buttons */
+.custom-btn {
+  background-color: #64ffda; /* Neon Green */
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #ff4081; /* Neon Pink on hover */
+  transform: scale(1.05);
+}
+
+.custom-btn:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* Loading State */
+.loading {
+  color: #64ffda;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 25px 0;
+}
+
+/* Error Container - Added to create space */
+.error-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4081;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgba(255, 64, 129, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  border: 2px solid #ff4081;
+  text-align: center;
+}
+
+/* Bootstrap Alert Styling */
+.error-message.alert {
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Adjust Button Inside Error Box */
+.error-message button {
+  background-color: #ff4081;
+  color: #1e1e1e;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.error-message button:hover {
+  background-color: #64ffda;
+  transform: scale(1.05);
+}
+
+/* Analysis Area - Added for better spacing */
+.analysis-area {
+  margin-bottom: 30px;
+}
+
+/* Data Fetch Info */
+.data-fetch-info, .data-ready {
+  margin: 25px 0;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Instructions */
+.instructions {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.instructions h3 {
+  color: #64ffda;
+  margin-bottom: 15px;
+}
+
+.instructions ol {
+  text-align: left;
+  margin-left: 20px;
+  font-size: 1.1rem;
+}
+
+.instructions li {
+  margin-bottom: 10px;
+  color: #dcdcdc;
+}
+
+.instructions .note {
+  font-style: italic;
+  margin-top: 20px;
+  color: #ff4081;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column;
+  }
+
+  .instructions {
+    padding: 15px;
+  }
+}

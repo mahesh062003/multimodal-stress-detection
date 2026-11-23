@@ -1,0 +1,28 @@
+/* Footer Container */
+.app-footer {
+  background-color: #1a1a1a; /* Dark background */
+  color: #b0b0b0; /* Light text color */
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 100%;
+  position: relative; /* Prevents overlap issues */
+  bottom: 0;
+  z-index: 50;
+}
+
+/* Footer Content */
+.footer-content {
+  font-size: 1rem;
+  color: #dcdcdc;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    font-size: 0.9rem;
+  }
+}

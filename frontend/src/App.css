@@ -1,0 +1,117 @@
+/* Global Styles */
+body {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #121212;
+}
+
+/* Header */
+header {
+  background-color: #1e1e1e; /* Darker shade for header */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+  color: #64ffda; /* Neon green */
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(100, 255, 218, 0.8);
+}
+
+header a {
+  color: #64ffda; /* Neon green for links */
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+}
+
+header a:hover {
+  color: #ff4081; /* Neon pink hover effect */
+  text-shadow: 0 0 10px rgba(255, 64, 129, 0.8);
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #1e1e1e;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.6);
+}
+
+footer p {
+  color: #a0a0a0;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Button */
+button {
+  background-color: #ff4081; /* Neon pink button */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #64ffda; /* Neon green on hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(100, 255, 218, 0.7);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Neon Glow Effect */
+.neon-text {
+  color: #64ffda;
+  text-shadow: 0 0 10px rgba(100, 255, 218, 1), 0 0 20px rgba(100, 255, 218, 0.8), 0 0 30px rgba(100, 255, 218, 0.6);
+  font-size: 2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.neon-text:hover {
+  text-shadow: 0 0 20px rgba(100, 255, 218, 1), 0 0 40px rgba(100, 255, 218, 0.8), 0 0 60px rgba(100, 255, 218, 0.6);
+  transform: scale(1.05);
+}
+
+/* Animated Background (Optional) */
+@keyframes neonBackground {
+  0% {
+    background-color: #121212;
+  }
+  50% {
+    background-color: #1e1e1e;
+  }
+  100% {
+    background-color: #121212;
+  }
+}
+
+.app-container {
+  animation: neonBackground 5s ease-in-out infinite;
+}

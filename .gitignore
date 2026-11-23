@@ -1,0 +1,37 @@
+# ---- Secrets: never commit ----
+.env
+credentials.json
+service_account.json
+token.pickle
+client_secret*.json
+*.pem
+
+# ---- Personal / collected data ----
+# SQLite store of real heart-rate, sleep and stress-session records
+*.db
+*.sqlite3
+backend/temp/
+backend/uploads/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+venv/
+env/
+.venv/
+.ipynb_checkpoints/
+
+# ---- Node ----
+node_modules/
+dist/
+.vite/
+
+# ---- Datasets (fetch from source, see README) ----
+data/
+datasets/
+*.zip
+
+# ---- OS ----
+Thumbs.db
+desktop.ini
+.DS_Store

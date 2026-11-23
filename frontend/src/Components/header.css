@@ -1,0 +1,124 @@
+/* Header Container */
+.app-header {
+  background-color: #121212;
+  color: #e0e0e0;
+  padding: 15px 40px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+/* Header Content - For Proper Alignment */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Logo */
+.logo h1 {
+  color: #64ffda;
+  font-size: 2.2rem;
+  cursor: pointer;
+  text-shadow: 0 0 15px rgba(100, 255, 218, 0.8);
+  transition: all 0.3s ease;
+  margin: 0;
+}
+
+.logo h1:hover {
+  text-shadow: 0 0 30px rgba(100, 255, 218, 1), 0 0 40px rgba(100, 255, 218, 0.7);
+}
+
+/* Navigation Menu */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #b0b0b0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+}
+
+.main-nav li:hover {
+  color: #64ffda;
+  text-shadow: 0 0 10px rgba(100, 255, 218, 0.8);
+  transform: translateY(-3px);
+}
+
+/* Mobile Menu Toggle Button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #e0e0e0;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+/* Active Menu Button Effect */
+.menu-toggle.active {
+  color: #64ffda;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 10px 20px;
+    height: auto;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-nav.open {
+    display: block;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 10px;
+  }
+
+  .logo h1 {
+    font-size: 2rem;
+  }
+
+  .main-nav li {
+    font-size: 1.1rem;
+    padding: 10px 0;
+  }
+}
