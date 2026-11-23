@@ -134,12 +134,12 @@ The face and speech modalities work with no Google setup at all.
 ## Publication
 
 **"Facial and Speech Emotion Detection"** — IJIRT, paper 177475.
-Co-authored; certificates were issued to Arul, Dharaneesh, Jansi Rani and
-Mahesh Veeraiah. A further paper was prepared for COMNET 2025.
+A further paper was prepared for COMNET 2025.
 
-> **TODO before publishing:** confirm the per-author role breakdown in this
-> section. Only my own IJIRT certificate is included in `docs/`; the others are
-> not mine to publish.
+This was a **team project**, co-authored with Arul, Dharaneesh and Jansi Rani.
+Work was collaborative across the modalities rather than split into separate
+ownership. Only my own IJIRT certificate is included in `docs/` — the others
+are not mine to publish.
 
 ---
 
