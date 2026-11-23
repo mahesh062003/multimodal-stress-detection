@@ -10,7 +10,8 @@ looks at the camera, speech requires the user to talk, and heart-rate data lags
 the moment it describes. Fusing the three means the system still produces an
 assessment when any one of them is missing.
 
-📄 Published in IJIRT — [`docs/IJIRT177475-...pdf`](docs/IJIRT177475-facial-and-speech-emotion-detection.pdf)
+📄 Published in IJIRT (International Journal of Innovative Research in
+Technology), paper **177475**.
 
 ---
 
@@ -91,7 +92,7 @@ research/          Training notebooks and evaluation output per modality
   Facial stress/     CNN and Vision Transformer
   speech stress/     BERT and SVM/LogReg/RandomForest
   smartwatch/        XGBoost vs RF vs SVM, Google Fit ingestion
-docs/              Published paper, project report, result figures
+docs/figures/      Result figures: confusion matrix, training curves, workflow
 ```
 
 ---
@@ -138,8 +139,11 @@ A further paper was prepared for COMNET 2025.
 
 This was a **team project**, co-authored with Arul, Dharaneesh and Jansi Rani.
 Work was collaborative across the modalities rather than split into separate
-ownership. Only my own IJIRT certificate is included in `docs/` — the others
-are not mine to publish.
+ownership.
+
+The paper PDF, certificates and project report are not committed here — the
+certificates belong to the people they were issued to, and the report is a
+coursework deliverable. Result figures are in `docs/figures/`.
 
 ---
 
