@@ -77,10 +77,8 @@ video is uploaded, so the server never receives frames with no face in them.
 ## Layout
 
 ```
-backend/           Flask API (5 routes) and the three deployed models
-  fmodels/           facial CNN and Haar cascades
-  smodels/           speech SVM and TF-IDF vectoriser
-  wmodels/           wearable XGBoost, scaler, label encoder
+backend/           Flask API (5 routes)
+  fmodels/           Haar cascades for face detection
 frontend/          React + Vite client (webcam, recorder, results)
 research/          Training notebooks and evaluation output per modality
   Facial stress/     CNN and Vision Transformer
@@ -119,9 +117,10 @@ The face and speech modalities need no Google setup.
 
 ### Not included
 
-Google credentials and cached tokens, the SQLite store of heart-rate and sleep
-records, and the training datasets — see the notebooks in `research/` for
-dataset sources.
+The trained weights are not distributed — the notebooks in `research/` train
+each model from scratch, and name their dataset sources. Also excluded: Google
+credentials and cached tokens, and the SQLite store of heart-rate and sleep
+records.
 
 ---
 
